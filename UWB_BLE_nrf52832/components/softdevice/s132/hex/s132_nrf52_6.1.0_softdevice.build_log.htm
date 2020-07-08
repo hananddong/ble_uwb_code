@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=JDALQ-NCTHN-QGN7I-T5J1P-8MH3K-A39BF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  D:\keil_5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.2.0
+ 
+<h2>Project:</h2>
+E:\ble\20200427_UWB_BLE_Slave\examples\ble_peripheral\ble_app_uart\pca10040\s132\arm5_no_packs\ble_app_uart_pca10040_s132.uvprojx
+Project File Date:  05/07/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\keil_5\ARM\ARMCC\Bin'
+Rebuild target 'flash_s132_nrf52_6.1.0_softdevice'
+Before Build - User command #1: attrib +R ..\..\..\..\..\..\components\softdevice\s132\hex\\*
+compiling user_wdt.c...
+..\..\..\..\..\..\API\src_user\user_wdt.c(2): error:  #5: cannot open source input file "nrfx_wdt.h": No such file or directory
+  #include "nrfx_wdt.h"
+..\..\..\..\..\..\API\src_user\user_wdt.c: 0 warnings, 1 error
+compiling main.c...
+..\..\..\main.c(1): error:  #5: cannot open source input file "nrf_drv_rtc.h": No such file or directory
+  #include "nrf_drv_rtc.h"
+..\..\..\main.c: 0 warnings, 1 error
+compiling deca_device.c...
+..\..\..\..\..\..\API\deca_driver\deca_device.c(21): error:  #5: cannot open source input file "user_log.h": No such file or directory
+  #include "user_log.h"
+..\..\..\..\..\..\API\deca_driver\deca_device.c: 0 warnings, 1 error
+compiling deca_params_init.c...
+compiling deca_range_tables.c...
+..\..\..\..\..\..\API\deca_driver\deca_range_tables.c(647): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      int rangeint25cm = (int) (range * 4.00) ;       // convert range to integer number of 25cm values.
+..\..\..\..\..\..\API\deca_driver\deca_range_tables.c: 1 warning, 0 errors
+compiling port_platform.c...
+..\..\..\..\..\..\API\deca_driver\port\port_platform.c(13): error:  #5: cannot open source input file "dw1001_dev.h": No such file or directory
+  #include "dw1001_dev.h"
+..\..\..\..\..\..\API\deca_driver\port\port_platform.c: 0 warnings, 1 error
+compiling dev.c...
+..\..\..\..\..\..\API\src_user\dev.c(11): error:  #5: cannot open source input file "nrf_gpio.h": No such file or directory
+  #include "nrf_gpio.h"
+..\..\..\..\..\..\API\src_user\dev.c: 0 warnings, 1 error
+compiling dev_chest.c...
+..\..\..\..\..\..\API\src_user\dev_chest.c(3): error:  #5: cannot open source input file "blue.h": No such file or directory
+  #include "blue.h"
+..\..\..\..\..\..\API\src_user\dev_chest.c: 0 warnings, 1 error
+compiling user_timer.c...
+..\..\..\..\..\..\API\src_user\user_timer.c(2): error:  #5: cannot open source input file "nrf_drv_timer.h": No such file or directory
+  #include "nrf_drv_timer.h"
+..\..\..\..\..\..\API\src_user\user_timer.c: 0 warnings, 1 error
+compiling user_log.c...
+..\..\..\..\..\..\API\src_user\user_log.h(7): error:  #5: cannot open source input file "SEGGER_RTT.h": No such file or directory
+  #include "SEGGER_RTT.h"
+..\..\..\..\..\..\API\src_user\user_log.c: 0 warnings, 1 error
+compiling user_cfg.c...
+..\..\..\..\..\..\API\src_user\user_cfg.c(2): error:  #5: cannot open source input file "nrf_nvmc.h": No such file or directory
+  #include "nrf_nvmc.h"
+..\..\..\..\..\..\API\src_user\user_cfg.c: 0 warnings, 1 error
+compiling send_timer.c...
+..\..\..\..\..\..\API\src_user\send_timer.h(4): error:  #5: cannot open source input file "nrf_drv_timer.h": No such file or directory
+  #include "nrf_drv_timer.h"
+..\..\..\..\..\..\API\src_user\send_timer.c: 0 warnings, 1 error
+compiling kf_vhub.c...
+..\..\..\..\..\..\API\src_user\user_log.h(7): error:  #5: cannot open source input file "SEGGER_RTT.h": No such file or directory
+  #include "SEGGER_RTT.h"
+..\..\..\..\..\..\API\src_user\kf_vhub.c: 0 warnings, 1 error
+compiling nrf_fstorage.c...
+..\config\sdk_config.h(46): error:  #5: cannot open source input file "user_cfg.h": No such file or directory
+  #include "user_cfg.h"
+..\..\..\..\..\..\components\libraries\fstorage\nrf_fstorage.c: 0 warnings, 1 error
+compiling nrf_fstorage_sd.c...
+..\..\..\..\..\..\components\libraries\fstorage\nrf_fstorage_sd.c(41): error:  #5: cannot open source input file "sdk_common.h": No such file or directory
+  #include "sdk_common.h"
+..\..\..\..\..\..\components\libraries\fstorage\nrf_fstorage_sd.c: 0 warnings, 1 error
+compiling nrfx_prs.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\prs\nrfx_prs.c: 0 warnings, 1 error
+compiling nrfx_twim.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twim.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_twim.c: 0 warnings, 1 error
+compiling nrfx_saadc.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_saadc.c(40): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_saadc.c: 0 warnings, 1 error
+compiling nrfx_spi.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_spi.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_spi.c: 0 warnings, 1 error
+compiling nrfx_spim.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_spim.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_spim.c: 0 warnings, 1 error
+compiling nrf_drv_spi.c...
+..\config\sdk_config.h(46): error:  #5: cannot open source input file "user_cfg.h": No such file or directory
+  #include "user_cfg.h"
+..\..\..\..\..\..\integration\nrfx\legacy\nrf_drv_spi.c: 0 warnings, 1 error
+compiling nrfx_timer.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_timer.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_timer.c: 0 warnings, 1 error
+compiling nrfx_rtc.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_rtc.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_rtc.c: 0 warnings, 1 error
+compiling nrfx_wdt.c...
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_wdt.c(41): error:  #5: cannot open source input file "nrfx.h": No such file or directory
+  #include <nrfx.h>
+..\..\..\..\..\..\modules\nrfx\drivers\src\nrfx_wdt.c: 0 warnings, 1 error
+compiling blue.c...
+..\..\..\..\..\..\API\BluetoothOperation\blue.h(4): error:  #5: cannot open source input file "ble_nus.h": No such file or directory
+  #include "ble_nus.h"
+..\..\..\..\..\..\API\BluetoothOperation\blue.c: 0 warnings, 1 error
+compiling battery.c...
+..\..\..\..\..\..\API\BATTERY\battery.h(5): error:  #5: cannot open source input file "nrf_saadc.h": No such file or directory
+  #include "nrf_saadc.h"
+..\..\..\..\..\..\API\BATTERY\battery.c: 0 warnings, 1 error
+compiling trilateration.c...
+..\..\..\..\..\..\API\trilateration\trilateration.c(12): error:  #5: cannot open source input file "user_log.h": No such file or directory
+  #include "user_log.h"
+..\..\..\..\..\..\API\trilateration\trilateration.c: 0 warnings, 1 error
+compiling tag.c...
+..\..\..\..\..\..\API\distance\time_stamp.h(4): error:  #5: cannot open source input file "deca_device_api.h": No such file or directory
+  #include "deca_device_api.h"
+..\..\..\..\..\..\API\distance\tag.c: 0 warnings, 1 error
+compiling ant.c...
+..\..\..\..\..\..\API\distance\time_stamp.h(4): error:  #5: cannot open source input file "deca_device_api.h": No such file or directory
+  #include "deca_device_api.h"
+..\..\..\..\..\..\API\distance\ant.c: 0 warnings, 1 error
+compiling tag_mast_slave.c...
+..\..\..\..\..\..\API\distance\time_stamp.h(4): error:  #5: cannot open source input file "deca_device_api.h": No such file or directory
+  #include "deca_device_api.h"
+..\..\..\..\..\..\API\distance\tag_mast_slave.c: 0 warnings, 1 error
+compiling time_stamp.c...
+..\..\..\..\..\..\API\distance\time_stamp.h(4): error:  #5: cannot open source input file "deca_device_api.h": No such file or directory
+  #include "deca_device_api.h"
+..\..\..\..\..\..\API\distance\time_stamp.c: 0 warnings, 1 error
+"..\..\..\..\..\..\components\softdevice\s132\hex\s132_nrf52_6.1.0_softdevice.hex" - 29 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.29.0.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.29.0
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.29.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_flash_s132_nrf52_6.1.0_softdevice
+  C:\Users\JF\AppData\Local\Arm\Packs\NordicSemiconductor\nRF_DeviceFamilyPack\8.29.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.29.0
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52.h
+      Include file:  Device\Include\system_nrf.h
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
